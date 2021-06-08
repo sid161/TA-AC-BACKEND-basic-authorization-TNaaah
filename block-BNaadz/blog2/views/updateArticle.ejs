@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheet/style.css">
+</head>
+<body>
+    <header>
+        <a href="/">Home</a>
+        <a href="/users/signup">signup</a>
+        <a href="/users/login">login</a>
+        <a href="/users/logout">logout</a>
+        <a href="/article">articles</a>
+        <a href="/article/new">add article</a>
+      </header>
+    <h2>Edit Article</h2>
+    <form action="/articles/<%= article.id %>/edit" method="POST">
+        <input
+        type="text"
+        placeholder="Title"
+        name="title"
+        value="<%= article.title %> "
+      />
+      <input
+        type="text"
+        placeholder="Description"
+        name="description"
+        value="<%= article.description %> "
+      />
+      <input type="submit" value="Add Article" />
+    </form>
+</body>
+</html>

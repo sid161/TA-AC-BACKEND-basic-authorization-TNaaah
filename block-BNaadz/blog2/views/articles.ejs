@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheet/style.css"/>
+</head>
+<body>
+    <header>
+        <li>
+            <a href="/articles">Articles</a>
+        </li>
+        <% if(user) { %>
+            <li><a href="/articles/new"></a></li>
+            <li><a href="/users/logout"></a></li>
+            <%}else{%>
+                <li><a href="/users/register"></a></li>
+                <li><a href="/users/login"></a></li>
+                <% } %>
+    </header>
+    <% articles.forEach((article) => { %>
+        <h2><%= article.title %></h2>
+        <a href="/articles/<%= article.id %>">More</a>
+    <% }) %>
+
+
+    
+</body>
+</html>
