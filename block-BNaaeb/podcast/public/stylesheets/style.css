@@ -1,0 +1,54 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+header{
+  background-color: crimson;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.6rem 4rem;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 60vh;
+  background-color: cornflowerblue;
+  padding: 3rem;
+  border-radius: 13px;
+}
+
+.form-control{
+
+  margin: 1rem 0;
+  padding: .6rem .3rem;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+}
+
+.login {
+  background-color:rgb(47, 54, 52);
+
+}
+.login-control{
+
+  margin: 1rem 0;
+  padding: .6rem .3rem;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+}
+
